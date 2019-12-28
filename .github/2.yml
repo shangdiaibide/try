@@ -1,1 +1,10 @@
-12
+name: Ubuntu
+on:
+  watch:
+    types: [started]
+jobs:
+  Ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - name: SSH connection to Actions
+      uses: peter/debugger-action@master
